@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "2a273517-b3a2-4b70-b46f-63b727d6a866",
+      "employee_name": "Mrs. Eleanora Predovic",
+      "employee_salary": 278736,
+      "employee_age": 41,
+      "employee_title": "Advertising Representative",
+      "employee_email": "bitchin_blair@company.com"
+    },
+    {
+      "id": "b486d201-746f-4ef6-91e0-de1a85eae45b",
+      "employee_name": "Blythe Kuhic",
+      "employee_salary": 152337,
+      "employee_age": 29,
+      "employee_title": "Dynamic Healthcare Director",
+      "employee_email": "livlaughlo@company.com"
+    },
+    {
+      "id": "65bb7ea7-a644-47b1-bde8-60433214c336",
+      "employee_name": "Julie Zieme Sr.",
+      "employee_salary": 237428,
+      "employee_age": 54,
+      "employee_title": "Customer Supervisor",
+      "employee_email": "teejay_thompson@company.com"
+    },
+    {
+      "id": "594911ba-8c6a-4e22-af85-b889e43d3838",
+      "employee_name": "Chas Shields",
+      "employee_salary": 406962,
+      "employee_age": 26,
+      "employee_title": "Healthcare Architect",
+      "employee_email": "tickleme_pink@company.com"
+    },
+    {
+      "id": "46080598-eb64-43b7-8ea6-0bcf07dc6cb4",
+      "employee_name": "Mrs. Vallie Wolff",
+      "employee_salary": 459912,
+      "employee_age": 31,
+      "employee_title": "Design Architect",
+      "employee_email": "omg_its_laura@company.com"
+    },
+    {
+      "id": "e314c74d-e044-4985-80cb-b8222b11f239",
+      "employee_name": "Áki Ármannsson",
+      "employee_salary": 250000,
+      "employee_age": 35,
+      "employee_title": "Senior Software Engineer",
+      "employee_email": "aki.armannsson@company.com"
+    }
+  ],
+  "status": "Successfully processed request."
+}

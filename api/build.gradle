@@ -1,9 +1,32 @@
 plugins {
     id 'project-conventions'
+    id("org.unbroken-dome.test-sets") version "4.1.0"
+}
+
+testSets {
+    integrationTest { dirName = 'testIntegration' }
 }
 
 dependencies {
+    implementation platform("org.springframework.cloud:spring-cloud-dependencies:2023.0.6")
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation 'io.github.resilience4j:resilience4j-spring-boot3'
+    implementation 'com.github.ben-manes.caffeine:caffeine'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+    integrationTestImplementation 'org.wiremock.integrations:wiremock-spring-boot:3.2.0'
+}
+
+
+check.dependsOn integrationTest
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
 }
 
 springBoot {

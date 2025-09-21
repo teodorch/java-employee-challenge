@@ -1,2 +1,26 @@
 spring.application.name: employee-api
 server.port: 8111
+
+employee:
+  url: http://localhost:8112/api/v1/employee
+
+logging:
+  level:
+    com.reliaquest.api.client: DEBUG
+    feign.Logger: DEBUG
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: BASIC
+
+resilience4j.retry:
+  instances:
+    remoteServiceRetry:
+      max-attempts: 3
+      wait-duration: 20s
+      retry-exceptions:
+        - feign.FeignException$TooManyRequests  # only retry 429
